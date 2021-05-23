@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*Configurações Gerais*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+}
+/*Exemplo para funcionamento do scroll*/
+main{ /*apague em seguida*/
+    height: 120vh;
+}
+/*Fim do Exemplo*/
+
+/*Fim das Configurações Gerais*/
+/*Estilo do Copo*/
+    /*Configuração*/
+header#menu{ 
+    width: 100%;    /*Largura do elemento*/
+    position: fixed;    /*tipo da Posição do elemento*/
+    top: 0;     /*distância da posição: "colado no topo"*/
+    left: 0;    /*distância da posição: "colado a esquerda"*/    
+    z-index: 1000;  /*nivel de sobreposição do elemento*/
+    /*transition: background-color 0.5s ease; /*Transição da cor de fundo*/
+    /*transition: height 0.5s ease;*/
+}
+
+    /*Estilização*/
+nav.navbar{
+    display: flex;  /*Modo de exibição : "elementos lado a lado"*/
+    justify-content: space-around; /*alinhamento do conteúdo no espaço"*/
+    align-items: center;    /*Alinhamento vertical centralizado dos itens*/
+    background-color: #4991fc73;    /*Cor de fundo*/
+    height: 10vh;   /*altura do elemento*/
+    transition: 0.5s ease;
+}
+
+    /*Tipologia da logo - Estilização*/
+nav.navbar a.logo{
+    /*font-family: ;*/      
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;  /*Transforma o texto em maiúsculas/minúsculas*/
+    letter-spacing: 4px;        /*Espaçamento entre caracteres*/
+    word-spacing: 1rem;      /*Espaçamento entre palavras*/
+}
+
+    /* configuração icone de menu responsivo (oculto)*/
+div.mobile-menu-icon{
+    display: none;      /*modo de exibição : "invisível"*/
+    cursor: pointer;    /*cursor: mãozinha*/
+}
+
+    /*Estilização lista de navegação*/
+ul.nav-list{
+    list-style: none;   /*Estilo da lista: "Padrão"*/
+    display: flex;      /*Modo de exibição: "elementos lado a lado"*/
+}
+
+ul.nav-list li.nav-item{
+    letter-spacing: none;       /*Espaçamento entre caracteres*/
+    margin-left: 25px;      /*Margem: "a esquerda"*/
+}
+    /*Estilização dos itens do menu principal*/
+li.nav-item a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(41, 40, 40);
+    padding: 2px 8px;
+    transition: 0.5s;
+}
+li.nav-item a:hover{
+    color: rgb(70, 31, 212);
+    transition: 0.5s;
+    
+}
+/*Fim do Estilo do Copo*/
+
